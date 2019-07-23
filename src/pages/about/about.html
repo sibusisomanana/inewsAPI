@@ -1,11 +1,129 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      News
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="color">
+  <div class="wrapper">
+      <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
 
+      <h2>Latest Tech update</h2>
+      <div *ngFor="let n of title">
+        <ion-card>
+          <img *ngIf="n.urlToImage" src="{{n.urlToImage}}"/>
+          <ion-card-content>
+            <ion-card-title>
+              <p> {{n.title}} </p>
+           
+             <p> {{n.author}} {{</p>
+            
+
+
+            </ion-card-title>
+            <p>
+              
+            </p>
+          </ion-card-content>
+        </ion-card>
+        <button (click)="toContent()"ion-button block color="secondary">View</button>
+      </div>
+      
+  
+      
+    <div *ngFor="let n of player">
+   <div class="card">
+      
+       
+        <!-- <div class="img">
+            <img srC="https://lh3.googleusercontent.com/3M1bNAAPulsOX8-9tzRLrkrMzM8NQ421FOjLbngJjnkR_zZFhGCVD7ZKOQ5kJSZsR4ZH1Gir-G2Jw9zyztF7ZLlekoAJ2hiqB6U" style="margin-bottom: 5px; border-radius: 30PX;">
+            
+            <button (click)="getStats()"ion-button block color="secondary">View</button>
+          </div>
+  
+  
+  
+     
+        <div class="img">
+            <img srC="https://nowinsa.co.za/wp-content/uploads/2019/04/SimTiger-1.jpg" style="margin-bottom: 5px; border-radius: 30PX;">
+            
+            <button (click)="getStats()"ion-button block color="secondary">View</button>
+          </div>
+  
+  
+  
+        <div class="img">
+            <img srC="http://www.espncricinfo.com/db/PICTURES/CMS/286700/286777.4.jpg" style="margin-bottom: 5px; border-radius: 30PX;">
+            
+            <button (click)="getStats()"ion-button block color="secondary">View</button>
+          </div>
+          <div class="img">
+              <img src="https://www.athleticsweekly.com/wp-content/uploads/2019/02/Caster-Semenya-London-2017-800m-by-Mark-Shearman.jpg" style="margin-bottom: 5px; border-radius: 30PX;">
+           
+              <button (click)="getStats()"ion-button block color="secondary">View</button>
+            </div>
+            <div class="img">
+              <img src="http://cdn.24.co.za/files/Cms/General/d/5115/7fd3248f116746fe8c2297655fb4c6ce.jpg" style="margin-bottom: 5px; border-radius: 30PX;">
+         
+              <button (click)="getStats()"ion-button block color="secondary">View</button>
+            </div>
+            <div class="img">
+              <img src="http://cdn.24.co.za/files/Cms/General/d/6959/e1e1ca82c10e4635acff773cd511d4db.jpg" style="margin-bottom: 5px; border-radius: 30PX;">
+      
+              <button (click)="getStats()"ion-button block color="secondary">View</button>
+            </div>
+            
+  
+  
+  
+  
+            <div class="img">
+                <div class="img">
+                    <img src="https://www.iafrica.com/wp-content/uploads/2018/11/Cyril-Ramaphosa-4-696x448.jpg" style="margin-bottom: 5px; border-radius: 30PX;">
+                    <button (click)="getStats()"ion-button block color="secondary">Rate</button>
+    
+                  </div>
+                  
+              </div>
+              
+             -->
+      
+    
+  
+      <!-- <div class="title">
+          <div class="name">Name<p> {{n.player_name}} </p></div>
+          <div class="age">Age<p>{{n.player_age}}</p></div>
+          <div class="age">Country<p>{{n.player_country}}</p></div>
+          <div class="age">Jersey<p>{{n.player_number}}</p></div>
+          <div class="age">Team<p>{{n.team_name}}</p></div>
+          <div class="age">No:Games<p>{{n.player_match_played}}</p></div>
+          <div class="age">No:Red-cards<p>{{n.player_red_cards}}</p></div>
+          <div class="age">No:Yellow-cards<p>{{n.player_yellow_cards}}</p></div>
+          <div class="age">Position<p>{{n.player_type}}</p></div>
+          <div class="age">Team Key<p>{{n.player_key}}</p></div>
+          <div class="age">PlayerKey<p>{{n.team_key}}</p></div>
+  
+        </div>  -->
+   
+    
+      </div>
+    </div>
+    <!-- <div *ngFor="let n of stats">
+        <div class="name"><p> {{n.home}} </p></div>
+        <div class="name"><p> {{n.away}} </p></div>
+        <div class="name"><p> {{n.type}} </p></div>
+  
+  
+    </div> -->
+   
+   
+  
+    
+  </div>
+ 
+ 
+    
+      
 </ion-content>

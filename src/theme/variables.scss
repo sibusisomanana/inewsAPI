@@ -6,9 +6,7 @@
 $font-path: "../assets/fonts";
 
 
-// The app direction is used to include
-// rtl styles in your app. For more info, please see:
-// http://ionicframework.com/docs/theming/rtl-support/
+
 $app-direction: ltr;
 
 
@@ -34,41 +32,29 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  primary:    #e5eaf3,
+  secondary: #222,
+  danger:     #ce7705,
+  light:      rgb(219, 219, 219),
+  dark:       #222,
 );
 
+  //Top toolbar
+  $toolbar-md-background: color($colors, secondary);
 
-// App iOS Variables
-// --------------------------------------------------
-// iOS only Sass variables can go here
+  //Bottom
+  $tabs-md-background: color($colors, secondary);
+  $tabs-md-tabs-color-active: color($colors, light);
+  $tabs-md-tabs-color: color($colors, light);
+  $tabs-md-tabs-color-active: color($colors, light);
 
-
-
-
-// App Material Design Variables
-// --------------------------------------------------
-// Material Design only Sass variables can go here
-
-
-
-
-// App Windows Variables
-// --------------------------------------------------
-// Windows only Sass variables can go here
+  $list-md-background-color:color($colors, light);
+  $outer-content-wp-background-color: color($colors, dark);
 
 
 
 
-// App Theme
-// --------------------------------------------------
-// Ionic apps can have different themes applied, which can
-// then be future customized. This import comes last
-// so that the above variables are used and Ionic's
-// default are overridden.
+
 
 @import "ionic.theme.default";
 

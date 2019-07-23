@@ -1,3 +1,32 @@
 page-home {
+  ion-content {
+    background: rgb(36, 34, 34);
+  }
+  .content {
+    font-family: 'Francois One', sans-serif;
+    background-image: url(../../assets/imgs/tech.png);
 
+
+
+  }
+h4{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 260%;
+  padding: 70px;
+  margin-bottom: 30px;
+  
+}
+  img {
+
+      width: 200%;
+      border-radius: 15px;
+  }
+  button{
+    padding: 50px;
+    margin-bottom: 10px;
+    border-radius: 80px;
+  }
+  
+  
 }
